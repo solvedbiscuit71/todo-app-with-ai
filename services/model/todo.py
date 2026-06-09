@@ -36,3 +36,6 @@ class TodoList:
 
     def add(self, todo: TodoItem):
         self.todos.append(todo)
+
+    def __iter__(self):
+        return iter(self.todos)
