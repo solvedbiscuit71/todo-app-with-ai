@@ -1,9 +1,21 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from dto.todo import CreateTodoRequest, CreateTodoResponse, GetTodoResponse
 from model.todo import TodoItem
 from peewee import DoesNotExist
 
 app = FastAPI(root_path="/api/v1")
+
+# enable CORS for localhost (development)
+origins = ["http://localhost", "http://localhost:4200"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.post("/todo", status_code=201)
