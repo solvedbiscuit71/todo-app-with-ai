@@ -1,0 +1,9 @@
+<li class="todo-item">
+    <input class="todo-item__checkbox" type="checkbox" name="completed" id="completed" [value]="value().isCompleted">
+    <div class="todo-item__info">
+        <div class="todo-item__title">{{value().title}}</div>
+        @if (value().description !== null) {
+            <div class="todo-item__description">{{value().description}}</div>
+        }
+    </div>
+</li>
