@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+
+    --color-dark-800: #000000;
+    --color-dark-600: #191919;
+    --color-dark-400: #262625;
+    --color-dark-200: #40403E;
+
+    --color-light-800: #bfbfba;
+    --color-light-600: #e5e4df;
+    --color-light-400: #f0f0eb;
+    --color-light-200: #fafaf7;
+
+    --color-orange-800: #bf4d43;
+    --color-orange-600: #cc785c;
+    --color-orange-400: #d4a27f;
+    --color-orange-200: #ebdbbc;
+
+    --color-blue: #61aaf2;
+}
+
+body {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+
+  background-color: var(--color-dark-600);
+  color: var(--color-light-600);
+}
