@@ -1,0 +1,16 @@
+<li class="new-todo">
+    <input class="new-todo__checkbox" disabled>
+    <form class="new-todo__form" [formGroup]="newTodoForm" (ngSubmit)="onSubmit()">
+        <input type="text" class="new-todo__title" formControlName="title" placeholder="Title">
+        <input type="text" class="new-todo__description" formControlName="description" placeholder="Description (optional)">
+
+        <div class="new-todo__button">
+            <button class="button button__ghost" type="reset" (click)="onReset()">
+                Cancel
+            </button>
+            <button class="button button__primary" type="submit">
+                Add
+            </button>
+        </div>
+    </form>
+</li>
