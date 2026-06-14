@@ -15,6 +15,9 @@ header {
 
 main {
     flex: 1;
+
+    margin: 1em auto;
+    width: min(720px, 50vw);
 }
 
 footer {

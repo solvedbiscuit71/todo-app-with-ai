@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
-import { TodoItemInfo } from '../todo-item/todo-item';
+import { TodoItemInfo } from '../components/todo-item/todo-item';
 
 @Injectable({
   providedIn: 'root',
